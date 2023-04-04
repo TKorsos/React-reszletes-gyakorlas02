@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  /* color: #121212; */
+  
+}
+
+html, body {
+  font-size: 1rem;
+}
+
+.container {
+  background-color: beige;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* :focus {
+  background-color: dodgerblue;
+  color: #eee;
+  outline: 3px solid darkblue;
+  outline-offset: 2px;
+}
+
+* :focus::placeholder {
+  color: #ddd;
+}
+
+form input:hover, form button:hover, form :hover::placeholder {
+  background-color: darkblue;
+  color: #fff;
+}
+
+form * {
+  margin-bottom: 0.5rem;
+}
+
+form span {
+  font-size: 0.8rem;
+  color: red;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0.5rem solid sienna;
+  border-radius: 0.5rem;
+}
+
+legend h3 {
+  color: chocolate;
+}
+
+label input:not([type="checkbox"]) {
+  margin-right: 0.5rem;
+  width: 15rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border-color: brown;
+}
+
+form button {
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border-color: brown;
+  background-color: burlywood;
+}
+
+::placeholder {
+  font-size: 0.8rem;
+}
